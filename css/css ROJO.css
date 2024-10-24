@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+body {
+    background-image: url('../img/space.jpg'); /* Cambia esto por la ubicación correcta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Hace que el fondo se mantenga fijo al hacer scroll */
+    padding-top: 0;
+}
+
+/* Header ocupa todo el ancho */
+nav {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ce1313;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Submenús verticales */
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li:hover {
+    background-color: rgba(255, 255, 255, 0.295);
+}
+
+.menu-vertical li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+}
+
+/* Slider */
+.slider_container {
+    width: 400px;
+    height: auto;
+    margin: 90px auto 0;
+    overflow: hidden;
+    width: auto; /* Mantiene el ancho original o el ancho que desees */
+    height: 100px; /* Ajusta la altura que prefieras, aquí 500px */
+    object-fit: cover;
+}
+
+
+
+
+/* Colocar imagen en la parte superior derecha */
+img {
+    position: absolute;
+    top: 0; /* Mover a la parte superior */
+    right: 0; /* Mover a la parte derecha */
+    width: auto; /* Mantiene la relación de aspecto de la imagen */
+    height: 400px; /* Ajusta la altura que prefieras */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
+    top: 100px;
+    margin: 20px;
+}
+
+/* Pie de página en barra horizontal */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0; /* Fija el pie de página en la parte inferior */
+    z-index: 1000; /* Asegura que esté siempre por encima del contenido */
+    display: flex;
+    width: 100%;
+    margin: 0;
+    justify-content: center; /* Alinea el contenido horizontalmente */
+    align-items: center; /* Alinea el contenido verticalmente */
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; 
+}
+
+    .footer-container {
+        width: 100%; /* Puedes reducir este valor si quieres que el footer esté más alineado a la izquierda, o cambiarlo a 100% */
+        margin: 0 auto; /* Cambia a `0 auto` para centrar o `0` para eliminar margen */
+        text-align: left; /* Para alinear el contenido a la izquierda */
+        width: 90%; /* Mantener el ancho */
+        margin: 0; /* Elimina el margen */
+        margin-left: 0; /* Asegúrate de que no haya margen a la izquierda */
+        margin-right: auto; /* Esto mantiene el contenido en la izquierda */
+        text-align: center; /* Mantén el texto centrado dentro de la barra */
+    }
+    footer {
+        background-color: #e70d0dd0;
+        color: rgba(255, 255, 255, 0.849);
+        padding: 20px 0;
+        text-align: center;
+        width: 100%;
+        margin-top: auto; 
+      }
+      
+      .footer-container {
+        width: 90%;
+        margin: 0 auto;
+      }
+      
+      .footer-content p {
+        margin: 10px 0;
+      }
+      
+      .footer-links {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .footer-links li {
+        display: inline;
+        margin: 0 15px;
+      }
+      
+      .footer-links a {
+        color: rgba(255, 255, 255, 0.808);
+        text-decoration: none;
+      }
+      
+      .footer-links a:hover {
+        color: orange;
+      }
+      
+      .descripcion {
+        padding: 20px;
+        max-width: 600px; /* Reduce el ancho máximo para dar más espacio a la imagen */
+        margin: 150px auto; /* Ajuste de margen para que quede debajo del header fijo */
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente para que se vea mejor con la imagen de fondo */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        color: white; /* Letra blanca */
+        font-size: 14px; /* Tamaño de letra reducido */
+        line-height: 1.4; /* Espaciado entre líneas ajustado */
+        padding-left: 20px; /* Añade espacio a la izquierda para que no esté tan pegado */
+        padding-right: 20px; /* Añade espacio a la derecha para que no colisione con la imagen */
+      }
+      
+      .descripcion h2 {
+        color: #f0ad4e; /* Color de título amarillo relacionado con el Power Ranger Amarillo */
+        font-size: 18px; /* Ajusta el tamaño del título */
+        margin-bottom: 10px; /* Espacio debajo del título */
+      }
+      
+      .descripcion p {
+        margin-bottom: 10px; /* Espacio entre párrafos */
+      }
